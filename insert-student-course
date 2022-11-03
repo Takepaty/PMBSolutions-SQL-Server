@@ -1,0 +1,27 @@
+SELECT * FROM [Course]
+SELECT * FROM [Student]
+SELECT * FROM  [StudentCourse]
+SELECT NEWID()
+
+INSERT INTO 
+    [Student] 
+VALUES (
+    'd3305089-afd9-4d3a-a546-2ec2d8a4815b',
+    'André Baltieri',
+    'hello@pmbsolutions.com.br',
+    '11122233344',
+    '11999988754',
+    NULL,
+    GETDATE()
+)
+
+INSERT INTO 
+    [StudentCourse]
+VALUES(
+    '5f5a33f8-4ff3-7e10-cc6e-3fa000000000',
+    'd3305089-afd9-4d3a-a546-2ec2d8a4815b',
+    50,
+    0,
+    '2020-01-13 12:35:54',
+    GETDATE()
+)
